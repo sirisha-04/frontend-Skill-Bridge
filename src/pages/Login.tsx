@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Eye, EyeOff, ArrowRight, Sparkles } from "lucide-react";
+import { Eye, EyeOff, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -55,14 +55,9 @@ const Login = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 rounded-xl bg-primary-foreground/20 backdrop-blur-sm flex items-center justify-center">
-              <Sparkles className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <h1 className="text-5xl font-heading font-bold text-primary-foreground">
-              SkillBridge
-            </h1>
-          </div>
+          <h1 className="text-5xl font-heading font-bold text-primary-foreground mb-6">
+            SkillBridge
+          </h1>
           <p className="text-xl text-primary-foreground/80 max-w-md leading-relaxed">
             Welcome back! Continue making an impact with your skills.
           </p>
@@ -94,10 +89,7 @@ const Login = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           {/* Mobile logo */}
-          <div className="lg:hidden flex items-center gap-2 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-primary-foreground" />
-            </div>
+          <div className="lg:hidden mb-8">
             <span className="text-2xl font-heading font-bold text-foreground">SkillBridge</span>
           </div>
 
